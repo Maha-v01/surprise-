@@ -1,27 +1,22 @@
-function login(){
+function login() {
 
-let password = document.getElementById("password").value.trim();
+    let username = document.getElementById("username").value.trim();
+    let password = document.getElementById("password").value.trim();
 
-alert("Password Entered: " + password);
+    if (username === "") {
+        alert("⚠️ Please enter your username.");
+        return;
+    }
 
-if(password === "12345"){
-    window.location.href = "prank.html";
-}
-else{
-    alert("❌ Wrong Password");
-}
+    if (password === "") {
+        alert("⚠️ Please enter your password.");
+        return;
+    }
 
-}
-
-if(password=="12345"){
-
-window.location.href="prank.html";
-
-}
-else{
-
-alert("❌ Wrong Password");
-
-}
+    if (password === "12345") {
+        window.location.href = "prank.html";
+    } else {
+        alert("❌ Wrong Password");
+    }
 
 }
