@@ -1,22 +1,35 @@
-function login() {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    let username = document.getElementById("user").value.trim();
-    let password = document.getElementById("pass").value.trim();
+<body>
 
-    if (username === "") {
-        alert("Please enter username");
-        return;
-    }
+    <div class="login">
 
-    if (password === "") {
-        alert("Please enter password");
-        return;
-    }
+        <h1>🔐 Secret Access</h1>
 
-    if (password === "12345") {
-        window.location.href = "prank.html";
-    } else {
-        alert("❌ Wrong Password");
-    }
+        <input
+            type="text"
+            id="user"
+            placeholder="Username">
 
-}
+        <input
+            type="password"
+            id="pass"
+            placeholder="Password">
+
+        <button onclick="login()">
+            Login
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
