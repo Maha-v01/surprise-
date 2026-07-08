@@ -1,3 +1,4 @@
+alert("Script Loaded");
 function login() {
 
     let username = document.getElementById("user").value.trim();
