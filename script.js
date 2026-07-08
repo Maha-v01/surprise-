@@ -1,15 +1,15 @@
 function login() {
 
-    let username = document.getElementById("username").value.trim();
-    let password = document.getElementById("password").value.trim();
+    let username = document.getElementById("user").value.trim();
+    let password = document.getElementById("pass").value.trim();
 
     if (username === "") {
-        alert("⚠️ Please enter your username.");
+        alert("Please enter username");
         return;
     }
 
     if (password === "") {
-        alert("⚠️ Please enter your password.");
+        alert("Please enter password");
         return;
     }
 
@@ -18,5 +18,4 @@ function login() {
     } else {
         alert("❌ Wrong Password");
     }
-
 }
